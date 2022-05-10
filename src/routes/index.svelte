@@ -28,9 +28,20 @@
 
 </script>
 
+<div class="navbar">
+	<ul>
+		<li><a href="app.html">Home</a></li>
+		<li><a href="chess.html">Chess</a></li>
+
+	</ul>
+</div>
+
 <form action="#" on:submit|preventDefault={sendMessage}>
 	<input type="text" bind:value="{textfield}" placeholder="Message..." />
 </form>
+
+
+
 
 <div class="messageHistory">
 	{#each messages as message}
